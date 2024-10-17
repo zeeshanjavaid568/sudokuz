@@ -1,0 +1,23 @@
+.sudoku-board {
+  display: grid;
+  grid-template-columns: repeat(9, 40px);
+  gap: 1px;
+  margin: 20px auto;
+  width: 362px; /* 9 cells + 8 gaps */
+  background-color: black;
+}
+
+.sudoku-cell {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: white;
+  border: 1px solid gray;
+  outline: none;
+}
+
+.sudoku-cell.duplicate {
+  background-color: #ffcccc;
+}
